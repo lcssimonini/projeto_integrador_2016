@@ -20,7 +20,7 @@ $(document).ready(function() {
                 $targetAnchor = $('[name=' + this.hash.slice(1) + ']');
             var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
             if ($target) {
-                var targetOffset = $target.offset().top;
+                var targetOffset = $target.offset().top - 70;
                 $(this).click(function() {
                     $('html, body').animate({
                         scrollTop: targetOffset

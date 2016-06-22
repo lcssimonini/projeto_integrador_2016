@@ -184,6 +184,7 @@ li a:hover {
 }
 .Titulo01 img {
     margin-top: 15px;
+    margin-bottom: 15px;
 }
 .Projeto01 {
     width: 100%;
@@ -277,7 +278,7 @@ li a:hover {
 /* CONTATO */
 
 .projetocontato {
-    min-height: 300px;
+    min-height: 400px;
     background-color: #222222;
     width: 100%;
 }
@@ -307,4 +308,34 @@ li a:hover {
     margin: 10px;
     text-align: right;
     margin-top: 6px;
+}
+/* form de contato */
+input[type="text"] {
+    padding: 15px;
+    width: 400px;
+    height: 35px;
+}
+
+#mensagemField {
+    padding: 15px;
+    width: 400px;
+    height: 150px;
+    resize: none;
+}
+
+#submitContato {
+    width: 100px;
+    height: 40px;
+    border: 0px;
+    background: #3cb0fd;
+}
+
+.btn:hover {
+  background: ##3CB0E2;
+  text-decoration: none;
+}
+
+form label {
+    margin-bottom: 10px;
+    margin-right: 10px;
 }

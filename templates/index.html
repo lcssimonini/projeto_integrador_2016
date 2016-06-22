@@ -169,6 +169,19 @@
                         <div class="col-12">
                             <div class="Titulo01">
                                 <a name="contato"><img src="static/Imagens/Titulo04.png" title="Contato" alt="Imagem Logo"></a>
+
+                                <form action="/contato" method="POST">
+                                    <label for="nomeField">NOME</label>
+                                    <input id="nomeField" name="nomeField" type="text" placeholder="NOME">
+
+                                    <label for="emailField">EMAIL</label>
+                                    <input id="emailField" name="emailField" type="text" placeholder="EMAIL">
+
+                                    <label for="mensagemField">MENSAGEM</label>
+                                    <textarea id="mensagemField" name="mensagemField"></textarea>
+                                    <br/>
+                                    <input type="submit" id="submitContato" />
+                                </form>
                              </div>
                         </div>
                     </div>
