@@ -1,0 +1,126 @@
+/*
+PROJETO INTEGRADOR - SI INTEGRADOR
+JOELSON
+LEONARDO
+LUCAS
+RAFAEL
+*/
+
+/* RESPONSIVIDADE */
+*{box-sizing: border-box;}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {float: left;}
+.linha:after {content: ""; display:block; clear: both;} 
+.caixa {margin: 0 17%;}
+.caixafluida {margin:0; background-color:#E5E5E5; height: auto; box-shadow: -1px 10px 51px -10px rgba(0,0,0,0.49);}
+/* FIM RESPONSIVIDADE */
+
+
+body {background-image: url('Imagens/background.jpg'); background-attachment: fixed; margin:0; width: 100%; height: 100%;}
+.espaco {min-height: 71px;}
+
+/* MENU */
+.logo {float:left; width: 239px; height: 39px; margin: 25px 0px 0 32px;}
+.mainmenu {float:left; width: 100%; height: auto; }
+.menu {z-index: 2; min-height: 80px; background-color: white; border-radius: 10px; position: fixed; top:-10px; width: 67%; box-shadow: -1px 10px 51px -10px rgba(0,0,0,0.49);}
+ul.opcoes {float:right; list-style-type: none; margin: 33px 16px 0 0; padding: 0; word-spacing: 15px; font-family: Calibri; font-size: 15px; font-weight: bold; color:#52B6EC; }
+ul.opcoes li {display: inline;}
+ul.opcoes li.icon {display: none;}
+li a {text-decoration: none; color:#52B6EC; padding: 27px 15px 29px 15px;  transition: all 0.3s ease-in;}
+li a:hover {text-decoration: none; color:white; padding: 27px 15px 29px 15px; background-color:#52B6EC;}
+@media screen and (max-width:1102px) {
+  ul.opcoes li:not(:first-child) {display: none;}
+  ul.opcoes li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media screen and (max-width:1102px) {
+  ul.opcoes.responsive {position: relative;}
+  ul.opcoes.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.opcoes.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.opcoes.responsive li a {
+    display: block;
+    text-align: right;
+  }
+}
+
+
+
+/* SLIDE */
+.Texto01 {min-height: 160px; vertical-align: middle;}
+.Texto01 p {text-align: center; margin-top: 115px;}
+
+/* O QUE FAZEMOS */
+.projeto {height: auto; background-color: white; border-radius: 6px; width: 100%; margin-top: 9px;}
+.Titulo01 {margin: auto; width: 265px; height: 39px;}
+.Titulo01 img {margin-top: 15px;}
+.Projeto01 {width: 100%; height: 220px;}
+.Projeto01 p {width: 80%; text-align: center; margin: 10px 0 0 25px; font-family: calibri; font-size: 14px;}
+.Projeto02 {width: 100%; height: 220px;}
+.Projeto02 p {width: 80%; text-align: center; margin: 10px 0 0 25px; font-family: calibri; font-size: 14px;}
+.Projeto03 {width: 100%; height: 220px;}
+.Projeto03 p {width: 80%; text-align: center; margin: 10px 0 0 25px; font-family: calibri; font-size: 14px;}
+.projetocentro {color:#9E9E9E; text-align: center; margin-top: 45px; padding: 10px; }
+
+/* QUEM SOMOS */
+.sobre {height: auto; background-color: #F3F3F3; width: 100%; margin-top: -9px; border-top: solid #E9E9E9;}
+.imagem01 {float: left; margin: auto; width:100%;}
+.imagem01 img {float: left; width: 100%; margin:30px 0 0 33px;}
+.textosobre {float: left; padding: 5px; margin:17px 0 0 42px;}
+.textosobre p {padding: 4px; color:#9E9E9E; font-family: calibri; font-size: 14px;}
+
+/* CURSOS */
+.projetocursos {z-index:1; height: auto; background-color: #F9F9F9; width: 100%; border-top: solid #E9E9E9; }
+.curso {width: 100%; margin: auto; transition: box-shadow 0.5s;  }
+.curso:hover {background-color: white; opacity: 0.8;  box-shadow: 0 0 0 2px #FF7F00;}
+
+/* CONTATO */
+.projetocontato {min-height: 300px;; background-color: #222222; width: 100%; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;}
+
+/* RODAPÉ */
+.nomeprojeto {height: auto; width: 100%;}
+.direitos {text-align: center; margin: auto; width: 100%;}
+.direitos p {font-family: calibri; font-size: 15px; margin-top: 28px; font-weight: bold; color:#676759;}
+.logofinal {margin:10px; text-align: center; margin-top: 6px;}
+.iftm {margin:10px; text-align: right; margin-top: 6px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
