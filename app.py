@@ -29,6 +29,9 @@ def metodologia():
 def sistemasop():
     return render_template("sistemasop.html", menu_cursos=True)
 
+@app.route("/contato")
+def contato():
+    return render_template("sistemasop.html", menu_cursos=True)
 
 if __name__ == "__main__":
     app.run(debug=True)

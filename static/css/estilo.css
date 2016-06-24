@@ -93,42 +93,67 @@ body {
     z-index: 2;
     min-height: 80px;
     background-color: white;
+    border-radius: 10px;
     position: fixed;
     top: -10px;
     width: 67%;
     box-shadow: -1px 10px 51px -10px rgba(0, 0, 0, 0.49);
 }
-
 ul.opcoes {
     float: right;
     list-style-type: none;
     margin: 33px 16px 0 0;
     padding: 0;
     word-spacing: 15px;
+    font-family: Calibri;
     font-size: 15px;
     font-weight: bold;
-    color: #52B6EC;
+    color: #097c68;
 }
-
 ul.opcoes li {
     display: inline;
 }
-
 ul.opcoes li.icon {
     display: none;
 }
-
 li a {
-    text-decoration: none;
-    color: #52B6EC;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: white;
+    position: relative;
     padding: 27px 15px 29px 15px;
-    transition: all 0.3s ease-in;
+    text-decoration: none;
+    background-color: white;
+    color: black;
 }
 li a:hover {
-    text-decoration: none;
     color: white;
+    background-color: #097c68;
     padding: 27px 15px 29px 15px;
-    background-color: #52B6EC;
+}
+li a:before {
+    pointer-events: none;
+    position: absolute;
+    z-index: -1;
+    content: '';
+    border-style: solid;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    left: calc(50% - 10px);
+    bottom: 0;
+    border-width: 10px 10px 0 10px;
+    border-color: #097c68 transparent transparent transparent;
+}
+li a:hover:before,
+li a:focus:before,
+li a:active:before {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+    color: white;
 }
 @media screen and (max-width: 1102px) {
     ul.opcoes li:not(:first-child) {
@@ -162,8 +187,9 @@ li a:hover {
 /* SLIDE */
 
 .Texto01 {
-    min-height: 400px;
+    min-height: 160px;
     vertical-align: middle;
+    text-align: center;
 }
 .Texto01 p {
     text-align: center;
@@ -174,6 +200,7 @@ li a:hover {
 .projeto {
     height: auto;
     background-color: white;
+    border-radius: 6px;
     width: 100%;
     margin-top: 9px;
 }
@@ -184,26 +211,22 @@ li a:hover {
 }
 .Titulo01 img {
     margin-top: 15px;
-    margin-bottom: 15px;
 }
 .Projeto01 {
     width: 100%;
     height: 220px;
 }
 .Projeto01 p {
-    width: 80%;
-    text-align: center;
-    margin: 10px 0 0 25px;
+    font-family: calibri;
     font-size: 14px;
 }
 .Projeto02 {
     width: 100%;
     height: 220px;
 }
+
 .Projeto02 p {
-    width: 80%;
-    text-align: center;
-    margin: 10px 0 0 25px;
+    font-family: calibri;
     font-size: 14px;
 }
 .Projeto03 {
@@ -211,9 +234,7 @@ li a:hover {
     height: 220px;
 }
 .Projeto03 p {
-    width: 80%;
-    text-align: center;
-    margin: 10px 0 0 25px;
+    font-family: calibri;
     font-size: 14px;
 }
 .projetocentro {
@@ -249,9 +270,9 @@ li a:hover {
 .textosobre p {
     padding: 4px;
     color: #9E9E9E;
+    font-family: calibri;
     font-size: 14px;
-    text-align: justify;
-    padding: 10px;
+    text-align: center;
 }
 /* CURSOS */
 
@@ -264,23 +285,21 @@ li a:hover {
 }
 .curso {
     width: 100%;
-    margin: auto;
-    transition: box-shadow 0.5s;
 }
-.curso:hover {
-    background-color: white;
-    opacity: 0.8;
-    box-shadow: 0 0 0 2px #FF7F00;
-}
-.curso img {
-    width: 230px;
+
+.descrVideo {
+  margin-left: 40px;
+  text-align: left;
 }
 /* CONTATO */
 
 .projetocontato {
-    min-height: 400px;
+    min-height: 300px;
+    ;
     background-color: #222222;
     width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 /* RODAPÉ */
 
@@ -294,6 +313,7 @@ li a:hover {
     width: 100%;
 }
 .direitos p {
+    font-family: calibri;
     font-size: 15px;
     margin-top: 28px;
     font-weight: bold;
@@ -308,34 +328,4 @@ li a:hover {
     margin: 10px;
     text-align: right;
     margin-top: 6px;
-}
-/* form de contato */
-input[type="text"] {
-    padding: 15px;
-    width: 400px;
-    height: 35px;
-}
-
-#mensagemField {
-    padding: 15px;
-    width: 400px;
-    height: 150px;
-    resize: none;
-}
-
-#submitContato {
-    width: 100px;
-    height: 40px;
-    border: 0px;
-    background: #3cb0fd;
-}
-
-.btn:hover {
-  background: ##3CB0E2;
-  text-decoration: none;
-}
-
-form label {
-    margin-bottom: 10px;
-    margin-right: 10px;
 }
