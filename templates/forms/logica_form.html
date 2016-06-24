@@ -1,0 +1,58 @@
+{% extends "base_cursos.html" %}
+{% block body %}
+<h2>Lógica de programação</h2>
+<h3>Video 1</h3>
+<p><b>1) Considerando dois valores inteiros X e Y. Qual alternativa abaixo representa corretamente que X deve ser MAIOR ou IGUAL a Y?</b> <br>
+ <form>
+   <input type="radio" name="subject" value="A"> a) (x < y) <br>
+   <input type="radio" name="subject" value="B"> b) (x >= y) <br> <!--CERTA-->
+   <input type="radio" name="subject" value="C"> c) (x == y) <br>
+   <input type="radio" name="subject" value="D"> d) (x != y) <br><br>
+ </form>
+</p>
+<p><b>2) Escolha a alternativa que defina o operador lógico da expressão abaixo:</b> <br>
+ <br>
+ if(X % 2 ? 0){ <br>
+   System.out.println("PAR");<br>
+   }else{<br>
+   System.out.println("IMPAR");<br>
+   }<br>
+ <form>
+   <input type="radio" name="subject" value="A"> a) != <br>
+   <input type="radio" name="subject" value="B"> b) >= <br>
+    <input type="radio" name="subject" value="C"> c) == <br>  <!--CERTA-->
+   <input type="radio" name="subject" value="D"> d) <= <br><br>
+ </form>
+</p>
+<p><b>3) Escolha a alternativa que defina que X deve ser DIFERENTE de 10 OU X deve ser MAIOR que 0: </b> <br>
+<br>
+if(X ? 10) ? (X ? 0){<br>
+ System.out.println("PAR");<br>
+ }else{<br>
+ System.out.println("IMPAR");<br>
+ }<br>
+ <form>
+   <input type="radio" name="subject" value="A"> a) ­ != , || , > <br><!--CERTA-->
+   <input type="radio" name="subject" value="B"> b) >= , && , < <br>
+   <input type="radio" name="subject" value="C"> c) == , || , > <br>
+   <input type="radio" name="subject" value="D"> d) ­ != , && , > <br><br>
+ </form>
+</p>
+<p><b>4) Considerando dois valores inteiros X e Y. Escolha a alternativa que representa corretamente que X deve ser MAIOR que Y E X deve ser DIFERENTE de 10?</b> <br>
+ <form>
+   <input type="radio" name="subject" value="A"> a) ((x > y) && (X != 10)) <br><!--CERTA-->
+   <input type="radio" name="subject" value="B"> b) ((x < y) || (X < 10)) <br>
+   <input type="radio" name="subject" value="C"> c) ­((x == y) || (X > 10))<br>
+   <input type="radio" name="subject" value="D"> d) ­((x >= y) && (X != 10)) <br><br>
+ </form>
+</p>
+<p><b>5) Considerando dois valores inteiros X e Y. Escolha a alternativa que representa corretamente que X deve ser IGUAL a Y E DIFERENTE de Z? </b> <br>
+ <form>
+   <input type="radio" name="subject" value="A"> a) ((x == y) && (X != Z)) <br><!--CERTA-->
+   <input type="radio" name="subject" value="B"> b) ­((x < y) || (X < Z)) <br>
+   <input type="radio" name="subject" value="C"> c) ((x == y) || (X > Z))<br>
+   <input type="radio" name="subject" value="D"> d) ­((x >= y) && (X != Z)) <br><br>
+     <input type="submit" value="Submit">
+ </form>
+</p>
+{% endblock %}

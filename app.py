@@ -33,5 +33,12 @@ def sistemasop():
 def contato():
     return render_template("sistemasop.html", menu_cursos=True)
 
+@app.route("/logica/questionarios/<num>")
+def logica_forms(num):
+    if num == 1:
+        return render_template("forms/logica_form.html")
+    else:
+        return render_template("forms/logica_form0.html")
+
 if __name__ == "__main__":
     app.run(debug=True)
