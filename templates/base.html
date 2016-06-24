@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SI Integrador</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+        <link href="static/css/estilo.css" rel="stylesheet" type="text/css"/>
+        <link rel="icon" href="static/static/Imagens/icon.gif" type="image/gif" >
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+        <script src="static/js/javascript.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <!--Topo-->
+            <div class="linha espaco"><a name="home"></a>
+                <div class="col-2"> .</div>
+                <div class="col-8">
+                    <div class="linha">
+                        <div class="menu">
+                            <div class="col-4">
+                                <div class="logo">
+                                    <a href="/"><img src="static/Imagens/logo.png" title="Projeto SI Integrador" alt="Imagem Logo"></a>
+                                </div>
+                            </div>
+                            <div class=" col-8">
+                                <ul class="opcoes">
+                                    <li><a href="/"  title="Página Inicial" style="color:white; background-color: #52B6EC; ">HOME</a></li>
+
+                                    {% if menu_cursos == False %}
+                                        <li><a href="#projeto" title="O Que Fazemos">PROJETO</a></li>
+                                        <li><a href="#sobre" title="Quem Somos">SOBRE</a></li>
+                                        <li><a href="#cursos" title="Nossos Cursos">CURSOS</a></li>
+                                        <li><a href="#contato" title="Contato">CONTATO</a></li>
+                                    {% endif %}
+                                    <li class="icon"> <a href="javascript:void(0);" onclick="myFunction()" title="Abrir Menu">&#9776;</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2"> .</div>
+            </div>
+
+            <div class="linha">
+                <div class="col-12 Texto01">
+                </div>
+            </div>
+        <!-- Fim Topo-->
+
+        {% block body %}{% endblock %}
+
+
+            <div class="nomeprojeto">
+                <div class="linha">
+                    <div class="col-12">
+                        <div class="direitos">
+                            <p>Copyright © Si integrador, Instituto Federal de Educação, Ciência e Tecnologia 2016</p>
+                         </div>
+                    </div>
+                </div>
+
+                <div class="linha">
+                    <div class="col-4">
+                        <div class="vazio">
+                            .
+                         </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="logofinal">
+                            <img src="static/Imagens/logo.png" title="Muito obrigado, por visitar nossa projeto" alt="Imagem Logo">
+                         </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="iftm">
+                            <a href="http://www.iftm.edu.br/uberlandiacentro/"><img src="static/Imagens/iftm.png" title="Conheça mais sobre a nossa Universidade" alt="Imagem Logo"></a>
+                         </div>
+                    </div>
+                </div>
+           </div>
+    </body>
+</html>
