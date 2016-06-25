@@ -96,7 +96,9 @@ body {
     border-radius: 10px;
     position: fixed;
     top: -10px;
-    width: 67%;
+    width: 70%;
+    left:50%;
+    margin-left: -35%;
     box-shadow: -1px 10px 51px -10px rgba(0, 0, 0, 0.49);
 }
 ul.opcoes {
@@ -133,6 +135,13 @@ li a:hover {
     background-color: #097c68;
     padding: 27px 15px 29px 15px;
 }
+
+.menuIndex li a:hover {
+    color: white;
+    background-color: #52B6EC;
+    padding: 27px 15px 29px 15px;
+}
+
 li a:before {
     pointer-events: none;
     position: absolute;
@@ -272,7 +281,6 @@ li a:active:before {
     color: #9E9E9E;
     font-family: calibri;
     font-size: 14px;
-    text-align: center;
 }
 /* CURSOS */
 
@@ -287,20 +295,15 @@ li a:active:before {
     width: 100%;
 }
 
+.curso img {
+    width: 210px;
+}
+
 .descrVideo {
   margin-left: 40px;
   text-align: left;
 }
-/* CONTATO */
 
-.projetocontato {
-    min-height: 300px;
-    ;
-    background-color: #222222;
-    width: 100%;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
 /* RODAPÉ */
 
 .nomeprojeto {
@@ -329,3 +332,70 @@ li a:active:before {
     text-align: right;
     margin-top: 6px;
 }
+
+/* CONTATO */
+
+.projetocontato {
+    min-height: 400px;
+    background-color: #222222;
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.formContato {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.formContato input {
+  border-radius: 5px;
+  border: 0px;
+  margin: 6px;
+  height: 30px;
+  padding: 8px;
+  background-color: #0f0f0a;
+  width: 190px;
+}
+
+.formContato textarea {
+  border-radius: 5px;
+  border: 0px;
+  margin: 5px;
+  height: 150px;
+  padding: 8px;
+  background-color: #0f0f0a;
+  width: 400px;
+  resize: none;
+}
+
+#submitContato {
+  height: 40px;
+  width: 180px;
+  background-color: #ff4d4d;
+  color: white;
+}
+
+.contatoImg {
+  width: 300px;
+  position: relative;
+  top: 35px;
+  left: 20px;
+}
+
+/* PÁGINA CURSOS */
+
+/* VIDEOAULAS */
+.textovideo {width: 100%; height: auto;}
+.projetovideo {color:#9E9E9E; text-align: center; margin-top: 30px; padding: 10px; }
+.video01 {width: 100%; height: auto;}
+
+/* MATERIAL */
+.projetoexer {z-index:1; height: auto; background-color: #F9F9F9; width: 100%; border-top: solid #E9E9E9; }
+.imagemmaterial {margin: auto; width: 100%; height: auto;}
+.imagemmaterial img {width:80%; margin-top:-10px;}
+
+/* QUESTIONÁRIOS */
+.projetoexer {z-index:1; height: auto; background-color: #F9F9F9; width: 100%; border-top: solid #E9E9E9; }
+.questimagem {margin: auto; width: 265px; height: 39px;}
+.questimagem img {margin-top: 15px;}

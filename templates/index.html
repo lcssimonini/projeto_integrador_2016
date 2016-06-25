@@ -52,7 +52,7 @@
                     <div class="linha">
                         <div class="col-3">
                             <div class="imagem01">
-                                <img src="static/Imagens/imagem01.png" title="Somos alunos, sempre buscando novas expêrencia" alt="Imagem Logo">
+                                <img src="static/Imagens/quem_somos.jpg" title="Somos alunos, sempre buscando novas expêrencia" alt="Imagem Logo">
                              </div>
                         </div>
 
@@ -116,6 +116,8 @@
                              </div>
                         </div>
                     </div>
+                    <br>
+                    <br>
                </div>
                <!-- Fim Nossos Cursos -->
 
@@ -124,22 +126,24 @@
                     <div class="linha">
                         <div class="col-12">
                             <div class="Titulo01">
-                                <a name="contato"><img src="static/Imagens/Titulo04.png" title="Contato" alt="Imagem Logo"></a>
-
-                                <form action="/contato" method="POST">
-                                    <label for="nomeField">NOME</label>
-                                    <input id="nomeField" name="nomeField" type="text" placeholder="NOME">
-
-                                    <label for="emailField">EMAIL</label>
-                                    <input id="emailField" name="emailField" type="text" placeholder="EMAIL">
-
-                                    <label for="mensagemField">MENSAGEM</label>
-                                    <textarea id="mensagemField" name="mensagemField"></textarea>
-                                    <br/>
-                                    <input type="submit" id="submitContato" />
-                                </form>
-                             </div>
+                                <a name="contato">
+                                  <img src="static/Imagens/Titulo04.png" title="Contato" alt="Imagem Logo">
+                                </a>
+                           </div>
                         </div>
+                    </div>
+                    <div class="linha">
+                      <div class="formContato col-6">
+                        <form action="/contato" method="POST">
+                            <input id="nomeField"  name="nomeField" type="text" placeholder="NOME">
+                            <input id="emailField" name="emailField" type="text" placeholder="EMAIL">
+                            <br/>
+                            <textarea class="col-12" id="mensagemField" name="mensagemField" placeholder="MENSAGEM"></textarea>
+                            <br/>
+                            <input type="submit" id="submitContato" value="ENVIAR MENSAGEM"/>
+                        </form>
+                      </div>
+                      <img class="contatoImg" src="static/Imagens/contato.jpg" alt="contato">
                     </div>
                </div>
 
