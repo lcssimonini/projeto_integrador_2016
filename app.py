@@ -5,6 +5,10 @@ app = Flask(__name__)
 def index():
     return render_template("index.html", menu_cursos=False)
 
+@app.route("/sitemap.xml")
+def sitemap():
+    return render_template("sitemap.xml")
+
 @app.route("/arquitetura")
 def arquitetura():
     return render_template("arquitetura.html", menu_cursos=True)

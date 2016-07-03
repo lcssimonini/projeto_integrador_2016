@@ -20,22 +20,20 @@ $(document).ready(function() {
     console.log("respostas corretas: "+correctCounter);
     console.log("respostas selecionadas: "+checkedCounter);
 
-    var aluno = prompt("Digite seu nome para o certificado", "Harry Potter");
-    var curso = window.location.pathname.split("/")[1];
-    window.location.href = "/" + curso + "/certificado?nome="+aluno;
+    if(checkedCounter < 10) {
+      alert("Responda todas as perguntas antes de continuar");
+    } else {
+      if(correctCounter > 6) {
 
-    // if(checkedCounter < 10) {
-    //   alert("Responda todas as perguntas antes de continuar");
-    // } else {
-    //   if(correctCounter > 6) {
-    //     var aluno = prompt("Digite seu nome para o certificado", "Harry Potter");
-    //     alert(aluno+" você passou!");
-    //     var curso = window.location.pathname.split("")[1];
-    //     window.location.href = curso+"/certificado";
-    //
-    //   } else {
-    //     alert("Você foi reprovado, tente novamente");
-    //   }
-    // }
+        var aluno = prompt("Parabéns, você foi aprovado. Digite seu nome para o certificado", "Keyser Söze");
+        if (aluno !== null) {
+          var curso = window.location.pathname.split("/")[1];
+          window.location.href = "/" + curso + "/certificado?nome="+aluno;
+        }
+
+      } else {
+        alert("Você foi reprovado, tente novamente");
+      }
+    }
   });
 });
