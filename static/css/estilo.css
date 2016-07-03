@@ -196,7 +196,7 @@ li a:active:before {
 /* SLIDE */
 
 .Texto01 {
-    min-height: 160px;
+    min-height: 300px;
     vertical-align: middle;
     text-align: center;
 }
@@ -369,6 +369,10 @@ li a:active:before {
   resize: none;
 }
 
+.courseImage {
+  width: 250px;
+}
+
 #submitContato {
   height: 40px;
   width: 180px;
@@ -381,6 +385,31 @@ li a:active:before {
   position: relative;
   top: 35px;
   left: 20px;
+}
+
+.material {
+
+}
+
+.material a {
+  transition: color .4s;
+  color: #265C83;
+  text-decoration: none;
+  font-size: 25px;
+  border: 2px solid #265C83;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.material a:link,
+.material a:visited { color: #265C83; }
+.material a:hover   {
+  color: #7FDBFF;
+  border: 2px solid #7FDBFF 
+}
+.material a:active  {
+  transition: color .3s;
+  color: #007BE6;
 }
 
 /* PÁGINA CURSOS */
