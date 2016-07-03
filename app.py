@@ -59,5 +59,31 @@ def webdesign_form():
 def metodologia_form():
     return render_template("forms/metodologia_form.html")
 
+# certificados
+
+@app.route("/metodologia/certificado")
+def metodologia_cert():
+    return render_template("certs/metodologia_cert.html")
+
+@app.route("/arquitetura/certificado")
+def arquitetura_cert():
+    return render_template("certs/arquitetura_cert.html")
+
+@app.route("/sistemasop/certificado")
+def sistemasop_cert():
+    return render_template("certs/sistemasop_cert.html")
+
+@app.route("/ingles/certificado")
+def ingles_cert():
+    return render_template("certs/ingles_cert.html")
+
+@app.route("/logica/certificado")
+def logica_cert():
+    return render_template("certs/logica_cert.html")
+
+@app.route("/webdesign/certificado")
+def webdesign_cert():
+    return render_template("certs/webdesign_cert.html")
+
 if __name__ == "__main__":
     app.run(debug=True)

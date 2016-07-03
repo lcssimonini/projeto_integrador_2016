@@ -419,6 +419,20 @@ li a:active:before {
   padding: 15px;
 }
 
+.formulario input[type="submit"] {
+  height: 40px;
+  width: 180px;
+  background-color: #ff4d4d;
+  color: white;
+  border-radius: 5px;
+  border: 0px;
+  float: right;
+}
+
+.certificado {
+  width: 100%;
+}
+
 /* VIDEOAULAS */
 .textovideo {width: 100%; height: auto;}
 .projetovideo {color:#9E9E9E; text-align: center; margin-top: 30px; padding: 10px; }
