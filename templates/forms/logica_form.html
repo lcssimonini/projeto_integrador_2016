@@ -4,12 +4,12 @@
 <h2>Lógica de programação</h2>
 <h3>Video 1</h3>
 <p><b>1) Considerando dois valores inteiros X e Y. Qual alternativa abaixo representa corretamente que X deve ser MAIOR ou IGUAL a Y?</b> <br>
- <form>
-   <input type="radio" name="subject" value="A"> a) (x < y) <br>
-   <input type="radio" name="subject" value="B"> b) (x >= y) <br> <!--CERTA-->
-   <input type="radio" name="subject" value="C"> c) (x == y) <br>
-   <input type="radio" name="subject" value="D"> d) (x != y) <br><br>
- </form>
+ <form id="questionario">
+
+   <input type="radio" name="questao01" value="A"> a) (x < y) <br>
+   <input status="certa" type="radio" name="questao01" value="B"> b) (x >= y) <br> <!--CERTA-->
+   <input type="radio" name="questao01" value="C"> c) (x == y) <br>
+   <input type="radio" name="questao01" value="D"> d) (x != y) <br><br>
 </p>
 <p><b>2) Escolha a alternativa que defina o operador lógico da expressão abaixo:</b> <br>
  <br>
@@ -18,12 +18,10 @@
    }else{<br>
    System.out.println("IMPAR");<br>
    }<br>
- <form>
-   <input type="radio" name="subject" value="A"> a) != <br>
-   <input type="radio" name="subject" value="B"> b) >= <br>
-    <input type="radio" name="subject" value="C"> c) == <br>  <!--CERTA-->
-   <input type="radio" name="subject" value="D"> d) <= <br><br>
- </form>
+   <input type="radio" name="questao02" value="A"> a) != <br>
+   <input type="radio" name="questao02" value="B"> b) >= <br>
+   <input status="certa" type="radio" name="questao02" value="C"> c) == <br>  <!--CERTA-->
+   <input type="radio" name="questao02" value="D"> d) <= <br><br>
 </p>
 <p><b>3) Escolha a alternativa que defina que X deve ser DIFERENTE de 10 OU X deve ser MAIOR que 0: </b> <br>
 <br>
@@ -32,62 +30,49 @@ if(X ? 10) ? (X ? 0){<br>
  }else{<br>
  System.out.println("IMPAR");<br>
  }<br>
- <form>
-   <input type="radio" name="subject" value="A"> a) ­ != , || , > <br><!--CERTA-->
-   <input type="radio" name="subject" value="B"> b) >= , && , < <br>
-   <input type="radio" name="subject" value="C"> c) == , || , > <br>
-   <input type="radio" name="subject" value="D"> d) ­ != , && , > <br><br>
- </form>
+   <input status="certa" type="radio" name="questao03" value="A"> a) ­ != , || , > <br><!--CERTA-->
+   <input type="radio" name="questao03" value="B"> b) >= , && , < <br>
+   <input type="radio" name="questao03" value="C"> c) == , || , > <br>
+   <input type="radio" name="questao03" value="D"> d) ­ != , && , > <br><br>
 </p>
 <p><b>4) Considerando dois valores inteiros X e Y. Escolha a alternativa que representa corretamente que X deve ser MAIOR que Y E X deve ser DIFERENTE de 10?</b> <br>
- <form>
-   <input type="radio" name="subject" value="A"> a) ((x > y) && (X != 10)) <br><!--CERTA-->
-   <input type="radio" name="subject" value="B"> b) ((x < y) || (X < 10)) <br>
-   <input type="radio" name="subject" value="C"> c) ­((x == y) || (X > 10))<br>
-   <input type="radio" name="subject" value="D"> d) ­((x >= y) && (X != 10)) <br><br>
- </form>
+   <input status="certa" type="radio" name="questao04" value="A"> a) ((x > y) && (X != 10)) <br><!--CERTA-->
+   <input type="radio" name="questao04" value="B"> b) ((x < y) || (X < 10)) <br>
+   <input type="radio" name="questao04" value="C"> c) ­((x == y) || (X > 10))<br>
+   <input type="radio" name="questao04" value="D"> d) ­((x >= y) && (X != 10)) <br><br>
 </p>
 <p><b>5) Considerando dois valores inteiros X e Y. Escolha a alternativa que representa corretamente que X deve ser IGUAL a Y E DIFERENTE de Z? </b> <br>
- <form>
-   <input type="radio" name="subject" value="A"> a) ((x == y) && (X != Z)) <br><!--CERTA-->
-   <input type="radio" name="subject" value="B"> b) ­((x < y) || (X < Z)) <br>
-   <input type="radio" name="subject" value="C"> c) ((x == y) || (X > Z))<br>
-   <input type="radio" name="subject" value="D"> d) ­((x >= y) && (X != Z)) <br><br>
-     <input type="submit" value="Submit">
- </form>
+   <input status="certa" type="radio" name="questao05" value="A"> a) ((x == y) && (X != Z)) <br><!--CERTA-->
+   <input type="radio" name="questao05" value="B"> b) ­((x < y) || (X < Z)) <br>
+   <input type="radio" name="questao05" value="C"> c) ((x == y) || (X > Z))<br>
+   <input type="radio" name="questao05" value="D"> d) ­((x >= y) && (X != Z)) <br><br>
 </p>
 <h3>Video 2</h3>
 <p><b>1) Considerando N == 0. Qual alternativa abaixo mostrará para o usuário uma contagem até 10?</b> <br>
- <form>
-   <input type="radio" name="subject" value="A"> a) while (n<=10){ System.out.println(n); n++; } <br> <!--CERTA-->
-   <input type="radio" name="subject" value="B"> b) while (n==10){System.out.println(n); n­­; } <br>
-   <input type="radio" name="subject" value="C"> c) while (n>=10){System.out.println(n+1); n++; } <br>
-   <input type="radio" name="subject" value="D"> d) while (n< 10){System.out.println(n); n+; } <br><br>
- </form>
+   <input status="certa" type="radio" name="questao06" value="A"> a) while (n<=10){ System.out.println(n); n++; } <br> <!--CERTA-->
+   <input type="radio" name="questao06" value="B"> b) while (n==10){System.out.println(n); n­­; } <br>
+   <input type="radio" name="questao06" value="C"> c) while (n>=10){System.out.println(n+1); n++; } <br>
+   <input type="radio" name="questao06" value="D"> d) while (n< 10){System.out.println(n); n+; } <br><br>
 </p>
 <p><b>2) Considerando o pedaço de código abaixo. Qual alternativa mostra corretamente a saida?(considere N == 0)</b> <br><br>
  for(int i=n;i<=2;i++){<br>
  System.out.println("OI");<br>
  }<br>
  0bs: Considere ',' como uma quebra de linha.<br>
- <form>
-   <input type="radio" name="subject" value="A"> a) OI,OI,OI <br> <!--CERTA-->
-   <input type="radio" name="subject" value="B"> b) OI,OI,OI,OI <br>
-   <input type="radio" name="subject" value="C"> c) OI,OI <br>
-   <input type="radio" name="subject" value="D"> d) OI <br><br>
- </form>
+   <input status="certa" type="radio" name="questao07" value="A"> a) OI,OI,OI <br> <!--CERTA-->
+   <input type="radio" name="questao07" value="B"> b) OI,OI,OI,OI <br>
+   <input type="radio" name="questao07" value="C"> c) OI,OI <br>
+   <input type="radio" name="questao07" value="D"> d) OI <br><br>
 </p>
 <p><b>3) Considerando o pedaço de código abaixo. Qual alternativa mostra corretamente a saida?(considere N == 0)</b> <br><br>
  for(int i=n;i<=10;i++){<br>
  System.out.println(i);<br>
  }<br>
  0bs: Considere ',' como uma quebra de linha.<br>
- <form>
-   <input type="radio" name="subject" value="A"> a) 0,1,2,3,4,5,6,7,8,9,10 <br> <!--CERTA-->
-   <input type="radio" name="subject" value="B"> b) 1,2,3,4,5,6,7,8,9,10,11 <br>
-   <input type="radio" name="subject" value="C"> c) ­0,2,3,4,5,6,7,8,9 <br>
-   <input type="radio" name="subject" value="D"> d) ­1,2,3,4,5,6,7,8,9 <br><br>
- </form>
+   <input status="certa" type="radio" name="questao08" value="A"> a) 0,1,2,3,4,5,6,7,8,9,10 <br> <!--CERTA-->
+   <input type="radio" name="questao08" value="B"> b) 1,2,3,4,5,6,7,8,9,10,11 <br>
+   <input type="radio" name="questao08" value="C"> c) ­0,2,3,4,5,6,7,8,9 <br>
+   <input type="radio" name="questao08" value="D"> d) ­1,2,3,4,5,6,7,8,9 <br><br>
 </p>
 <p><b>4) Considerando os pedaços de código abaixo. Qual das duas alternativas mostra corretamente a saida?(considere N == 0)</b> <br><br>
  1­- for(int i=n;i<=10;i++){<br>
@@ -97,19 +82,18 @@ if(X ? 10) ? (X ? 0){<br>
  System.out.println(n);<br>
  n++;
  }<br>
- <form>
-   <input type="radio" name="subject" value="A"> a) As duas imprimem o mesmo resultado. <br> <!--CERTA-->
-   <input type="radio" name="subject" value="B"> b) Apenas a 1. <br>
-   <input type="radio" name="subject" value="C"> c) ­Apenas a 2. <br>
-   <input type="radio" name="subject" value="D"> d) ­Nenhuma das duas. <br><br>
- </form>
+   <input status="certa" type="radio" name="questao09" value="A"> a) As duas imprimem o mesmo resultado. <br> <!--CERTA-->
+   <input type="radio" name="questao09" value="B"> b) Apenas a 1. <br>
+   <input type="radio" name="questao09" value="C"> c) ­Apenas a 2. <br>
+   <input type="radio" name="questao09" value="D"> d) ­Nenhuma das duas. <br><br>
 </p>
 <p><b>5) Qual dos códigos abaixo imprimem a frase "Bom dia" 5 vezes?(considere N == 0)<br>
 0bs: Considere ',' como uma quebra de linha. </b> <br>
- <form>
-   <input type="radio" name="subject" value="A"> a) for(int i=n;i<=4;i++){System.out.println("Bom dia"); } <br> <!--CERTA--><input type="radio" name="subject" value="B"> b) for(int i=n;i<=5;i++){System.out.println("Bom dia"); } <br>
-   <input type="radio" name="subject" value="C"> c) ­while (n<=5){System.out.println("Bom dia"); n++; } <br>
-   <input type="radio" name="subject" value="D"> d) ­­while (n< 4){System.out.println("Bom dia"); n++; } <br><br>
+   <input status="certa" type="radio" name="questao10" value="A"> a) for(int i=n;i<=4;i++){System.out.println("Bom dia"); } <br> <!--CERTA-->
+   <input type="radio" name="questao10" value="B"> b) for(int i=n;i<=5;i++){System.out.println("Bom dia"); } <br>
+   <input type="radio" name="questao10" value="C"> c) ­while (n<=5){System.out.println("Bom dia"); n++; } <br>
+   <input type="radio" name="questao10" value="D"> d) ­­while (n< 4){System.out.println("Bom dia"); n++; } <br><br>
+
    <input type="submit" value="Submit">
  </form>
 </p>
