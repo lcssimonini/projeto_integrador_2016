@@ -33,12 +33,31 @@ def sistemasop():
 def contato():
     return render_template("sistemasop.html", menu_cursos=True)
 
-@app.route("/logica/questionarios/<num>")
-def logica_forms(num):
-    if num == 1:
-        return render_template("forms/logica_form.html")
-    else:
-        return render_template("forms/logica_form0.html")
+# questionarios
+
+@app.route("/logica/questionario")
+def logica_form():
+    return render_template("forms/logica_form.html")
+
+@app.route("/arquitetura/questionario")
+def arquitetura_form():
+    return render_template("forms/arquitetura_form.html")
+
+@app.route("/ingles/questionario")
+def ingles_form():
+    return render_template("forms/ingles_form.html")
+
+@app.route("/sistemasop/questionario")
+def sistemasop_form():
+    return render_template("forms/sistemasop_form.html")
+
+@app.route("/webdesign/questionario")
+def webdesign_form():
+    return render_template("forms/webdesign_form.html")
+
+@app.route("/metodologia/questionario")
+def metodologia_form():
+    return render_template("forms/metodologia_form.html")
 
 if __name__ == "__main__":
     app.run(debug=True)

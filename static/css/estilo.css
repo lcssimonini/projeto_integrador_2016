@@ -405,7 +405,7 @@ li a:active:before {
 .material a:visited { color: #265C83; }
 .material a:hover   {
   color: #7FDBFF;
-  border: 2px solid #7FDBFF 
+  border: 2px solid #7FDBFF
 }
 .material a:active  {
   transition: color .3s;
@@ -413,6 +413,11 @@ li a:active:before {
 }
 
 /* PÁGINA CURSOS */
+
+.formulario {
+  background-color: white;
+  padding: 15px;
+}
 
 /* VIDEOAULAS */
 .textovideo {width: 100%; height: auto;}
