@@ -432,16 +432,47 @@ li a:active:before {
 .certificado {
   width: 100%;
 }
+.cert {
+  width: 100%;
+  height: 620px;
+}
+
+.webdesign_cert {
+  background-image: url('/static/Imagens/certificados/webdesign_cert.jpg');
+}
+
+.arquitetura_cert {
+  background-image: url('/static/Imagens/certificados/arquitetura_cert.jpg');
+}
+
+.ingles_cert {
+  background-image: url('/static/Imagens/certificados/ingles_cert.jpg');
+}
+
+.logica_cert {
+  background-image: url('/static/Imagens/certificados/logica_cert.jpg');
+}
+
+.metodologia_cert {
+  background-image: url('/static/Imagens/certificados/metodologia_cert.jpg');
+}
+
+.sistemasop_cert {
+  background-image: url('/static/Imagens/certificados/sistemasop_cert.jpg');
+}
 
 #nomeAluno {
   text-align: center;
   font-size: 25px;
   position: relative;
-  top: -480px;
+  top: 290px;
 }
 
 #data {
-
+  font-size: 15px;
+  position: relative;
+  top: 420px;
+  left: 210px;
 }
 
 /* VIDEOAULAS */
